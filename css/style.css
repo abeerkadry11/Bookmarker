@@ -1,0 +1,48 @@
+::selection{
+    background-color: rgb(254, 194, 96);
+    color: rgb(53, 46, 40);
+}
+
+main{
+    background-color: rgb(247, 236, 222);
+
+    h1{
+        
+        font-family: Pacifico, cursive;
+        color: rgb(53, 46, 40);
+        isolation: isolate;
+        position: relative;
+        width: 230px;
+        margin: auto;
+        &::after{
+            content: "";
+            height: 20px;
+            width: 100%;
+            background-color: rgb(254, 194, 96);
+            position: absolute;
+            left: 0;
+            bottom: 55px;
+            z-index: -1;
+            transition: all 1s;
+        }
+        &:hover::after{
+            height: 40px;
+        }
+    }
+    .inner{
+        border: 2px dotted black;
+        border-left: 0;
+        border-right: 0;
+
+        h2 , .fa-bookmark{
+        font-size: 25px;
+        background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(181, 172, 73));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    }
+
+   
+    
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Bookmarker</title>
+</head>
+<body>
+   <main class="min-vh-100">
+    <div class="w-75 mx-auto text-center py-5">
+        <h1 class="pb-5">Bookmarker</h1>
+        <div class="inner py-5 mb-5">    
+            <div class="pb-4">
+                <i class="fa-solid fa-bookmark"></i>
+                <h2 class="d-inline-block">Bookmark your favorite sites</h2>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div class="has-validation mb-4 d-flex flex-wrap">
+                <label class="mb-2" for="floatingInputGroup2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" oninput="validSiteName(this)" class="form-control" id="floatingInputGroup2" placeholder="Bookmark Name" required>
+            </div>
+            <div class="has-validation mb-4 d-flex flex-wrap">
+                <label class="mb-2" for="floatingInputGroup"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="text" oninput="validSiteName(this)" class="form-control" id="floatingInputGroup" placeholder="Website URL" required>
+            </div>
+            <button onclick="addWebsite()" type="button" class="btn btn-danger">Submit</button>
+        </div>
+
+        <table class="bg-white w-100">
+            <thead>
+                <tr>
+                    <th class="p-3">Index</th>
+                    <th class="p-3">Website Name</th>
+                    <th class="p-3">Visit</th>
+                    <th class="p-3">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myData">
+                
+            </tbody>
+        </table>
+        
+    </div>
+   </main>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
